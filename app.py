@@ -17,9 +17,10 @@ st.set_page_config(page_title="Dashboard Analítico", layout="wide")
 # =========================
 # Cargar datos reales
 # =========================
-df2 = pd.read_csv("MATRIZ IA CASOS INFORMATICA U DE MEDELLIN COMPLETO.csv", encoding='latin-1', sep=';')
-df2["Fecha Hecho"] = pd.to_datetime(df2["Fecha Hecho"], errors="coerce")
+df = pd.read_csv("data/MATRIZ IA CASOS INFORMATICA U DE MEDELLIN COMPLETO.csv", encoding='latin-1', sep=';')
+df["Fecha Hecho"] = pd.to_datetime(df["Fecha Hecho"], errors="coerce")
 
+df2 = pd.read_csv("data\MATRIZ IA CASOS INFORMATICA U DE MEDELLIN COMPLETO.csv", encoding='latin-1', sep=';')
 # =========================
 # Título principal
 # =========================
