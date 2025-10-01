@@ -196,13 +196,13 @@ st.download_button(
 
 #-----------------------------caja 3-----------------------------------
 
-st.subheader("📊 Dashboard Analítico - Caja 3")
+st.subheader("CRUZAMIENTO DE VARIABLES")
 
 col3, col4 = st.columns(2)
 
 # -------- Variable 4: Modo vs Modalidad (Top 10 Modos) --------
 with col3:
-    st.subheader("Variable 4: Modo vs Modalidad (Top 10 Modos)")
+    st.subheader("Modo vs Modalidad (Top 10)")
     
     top_modos = df["Modo"].value_counts().nlargest(10).index
     df_modo_modalidad = df[df["Modo"].isin(top_modos)]
